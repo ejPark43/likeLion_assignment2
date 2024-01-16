@@ -1,0 +1,126 @@
+body {
+  background-color: hsl(30, 38%, 92%);
+  padding: 25%;
+  margin: auto;
+}
+@media (min-width: 375px) {
+  p {
+    font-family: "Montserrat",  sans-serif;
+    color: hsl(228, 12%, 48%);
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 7px;
+  }
+  #producttype {
+    font-size: 5px;
+    font-family: "Montserrat",  sans-serif;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  #name {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Fraunces", sans-serif;
+    margin-top: 5px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+  }
+  #content {
+    font-family: "Montserrat",  sans-serif;
+    font-weight: 500;
+    line-height: 15px;
+    margin-top: 15px;
+  }
+
+  .card {
+    padding: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    width: 400px;
+    height: 35%;
+    border-radius: 10px;
+  }
+  .productPic {
+    border-radius: 10px;
+    width: 100%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0px;
+    float: left;
+  }
+
+  #rightcard {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    /* border: 2px solid black; */
+  }
+  .costs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #finalcost {
+    font-size: 17pt;
+    font-weight: 600;
+    margin-top: 15px;
+    display: inline;
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces", sans-serif;
+    /* border: solid 2px green; */
+  }
+  #originalcost {
+    display: inline-block;
+    text-decoration-line: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 10px;
+    padding-top: 23px;
+    font-family: "Montserrat",  sans-serif;
+    /* border: solid 2px green; */
+    margin-left: 10px;
+  }
+  .add {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #addbutton {
+    display: inline;
+    text-decoration: none;
+    background-color: hsl(158, 36%, 37%);
+    font-weight: 500;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    color: white;
+    margin-top: 5px;
+    padding: 8px;
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    grid: none;
+    width: 250px;
+    height: 450px;
+  }
+  #producttype {
+    font-size: 5px;
+    font-family: "Montserrat",  sans-serif;
+    margin-top: 5px;
+  }
+
+  .productPic {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
